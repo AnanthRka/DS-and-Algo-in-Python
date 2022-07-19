@@ -17,16 +17,12 @@ def binary_search(input_array, value):
     right = l-1
     while left<=right:
         mid = (left +right)//2
-        # print(input_array[mid])
-        # print(mid, left ,right)
         if input_array[mid] < value:
             left = mid +1
         elif input_array[mid] > value:
             right = mid -1
         else:
             return mid
-        # print(input_array[mid])
-        # print(mid)
     return -1
 
 test_list = [1,3,9,11,15,19,29]
